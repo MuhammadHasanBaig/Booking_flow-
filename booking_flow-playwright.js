@@ -48,6 +48,7 @@ import { chromium } from "playwright";
   await page.getByRole('checkbox', { name: 'I agree to the Get Licensed' }).check();
   await page.getByRole('button', { name: 'Submit Payment' }).click();
   await page.goto('https://new-staging.get-licensed.co.uk/booking/checkout/thankyou?q=7270c81e-bcd6-4e66-87b1-75536fd4f5c8');
+  await page.goto('https://new-staging.get-licensed.co.uk/booking/checkout/thankyou?q=7270c81e-bcd6-4e66-87b1-75536fd4f5c8');
 
   // ---------------------
   await context.close();
